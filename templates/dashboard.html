@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Freelancer - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <style>
+
+                </style>
+                 <img class="loo" src="./static/assets/img/accueil/logo.jpg" alt="" />
+                <a class="navbar-brand" href="#page-top">Online Bank</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#accueil">Home</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#news">News</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact us</a></li>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded color" href="#">Welcome {{user.username}} !</a></li>            
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ url_for('logout') }}">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <style>
+                header {background-image: url("./static/assets/img/accueil/background.jpg");
+                     background-repeat: no-repeat;
+                     background-size: cover;
+                     background-position: center center;
+            }
+            </style>
+            <div class="container d-flex align-items-center flex-column">
+                
+                <!-- Masthead Heading-->
+                <div class="row">
+                    <div class="left"><p class="lead"><h1>ONLINE BANK<br></h1> A CUSTOMER-FOCUSED BANK THAT PROVIDES COMPLETE FINANCIAL SOLUTIONS TO MEET YOUR ENTIRE FINANCIAL NEEDS ! </p></div>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0"> THINK SMART, BANK WITH US !</p>
+            
+            </div>
+        </header>        <!-- accueil Section-->
+        <section class="page-section accueil" id="accueil">
+            <div class="container">
+                <!-- accueil Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Home</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- accueil Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- accueil Item 1-->
+                    <div class="col-md-3 col-lg-4 mb-5">
+                        <div class="accueil-item mx-auto" data-bs-toggle="modal" data-bs-target="#accueilModal1">
+                            <div class="accueil-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="accueil-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="/static/assets/img/accueil/happy1.jpg" alt="..." />
+                        </div>
+                        <style>
+                            h1 {text-align: justify;}
+                            p {text-align:justify;}
+                            div {text-align: justify;}
+                        </style>
+                        <p><h1>Mobile Payments<br></h1> No need to take out your Visa card and enter your personal information, we take care of it for you! </p>
+                    </div>
+                    <!-- accueil Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="accueil-item mx-auto" data-bs-toggle="modal" data-bs-target="#accueilModal2">
+                            <div class="accueil-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="accueil-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="/static/assets/img/accueil/happy2.jpg" alt="..." />
+                        </div>
+                        <style>
+                            h1 {text-align: justify;}
+                            p {text-align:justify;}
+                            div {text-align: justify;}
+                        </style>
+                        <p><h1>Solutions to finance your higher education<br></h1> Are you planning to continue your higher education, do an internship or benefit from an exchange program abroad and you wish to have financial aid for studies? ONLINE supports you through the “Financing of higher education” solutions. </p>
+                    </div>
+                    <!-- accueil Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="accueil-item mx-auto" data-bs-toggle="modal" data-bs-target="#accueilModal3">
+                            <div class="accueil-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="accueil-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="/static/assets/img/accueil/happy3.png" alt="..." />
+                        </div>
+                        <style>
+                        h1 {text-align: center;}
+                        p {text-align: center;}
+                        div {text-align: center;}
+                        </style>
+                        <p><h1> Do you have children and want to prepare for their future ? </h1><br>From the age of 12, save for him in the long term in complete safety thanks to the Youth savings account and let him benefit from an advantageous rate </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-md-2 col-lg-4 mb-5">
+                        <style>
+                            h1 {text-align: center;}
+                            p {text-align: center;}
+                            div {text-align: center;}
+                            </style>
+                        <p><h1>Our purpose</h1><br>
+                            Our Purpose is the reason our company exists; the societal need we fulfil. It encapsulates what we are fundamentally here to do.
+                            It provides a clear expression of the kind of business we want to be, and what we care about, which in turn helps guide us in the decisions we make.</p>
+                    </div> 
+                    <div class="col-md-1 col-lg-4 mb-5">
+                        <style>
+                            p {text-align: center;}
+                        </style>
+                        <p>
+                            <h1 >Our governance
+                            </h1><br> The Board’s principal duty is to create and deliver sustainable shareholder value through setting Online Bank' strategy and overseeing its implementation.
+                            Certain responsibilities are delegated to Board Committees, which assist the Board in carrying out its functions and ensure that there is independent oversight of internal control and risk management.
+                        </p>
+                    </div>
+                    <div class="col-md-1 col-lg-4 mb-5">
+                        <style>
+                            p {text-align: center;}
+                        </style>
+                        <p>
+                            <h1 >Our suppliers
+                            </h1><br> We see our suppliers as an extension of our business and key in helping us become the bank of choice. Our aim is to develop world-class, value-adding partnerships with our suppliers and support innovative solutions that put clients and customers at the heart of what we do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section-->
+        <section class="page-section bg-primary text-white mb-0" id="news">
+            <div class="container">
+                <!-- news Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">News</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Icon Divider-->
+                <div class="row">
+                <div class="col-md-1 col-lg-4 mb-5">
+                        <style>
+                            p {text-align: center;}
+                        </style>
+                        <p>
+                            <img class="img-fluid" src="static/assets/img/accueil/news1.jpg" alt="..." />
+                            <h1 >{{value1}}</h1><br>
+                             {{value2}}
+                        </p>
+                </div>
+                <div class="col-md-1 col-lg-4 mb-5">
+                    <style>
+                        p {text-align: center;}
+                    </style>
+                    <p>
+                        <img class="img-fluid" src="static/assets/img/accueil/news2.jpg" alt="..." />
+                        <h1 >{{value3}}
+                        </h1><br> {{value4}}
+                    </p>
+            </div>
+            <div class="col-md-1 col-lg-4 mb-5">
+                <style>
+                    p {text-align: center;}
+                </style>
+                <p>
+                    <img class="img-fluid" src="static/assets/img/accueil/news3.jpg" alt="..." />
+                    <h1 >{{value5}}
+                    </h1><br> {{value6}}
+                </p>
+        </div>
+
+    </div>
+
+
+
+
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact us</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full Name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">E-mail </label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone Number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                             35000 Madinat al Irfane 
+                            <br />
+                            Rabat
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About us</h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+        </div>
+        <!-- accueil Modals-->
+        <!-- accueil Modal 1-->
+        <div class="accueil-modal modal fade" id="accueilModal1" tabindex="-1" aria-labelledby="accueilModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- accueil Modal - Title-->
+                                    <h2 class="accueil-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- accueil Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/accueil/cabin.png" alt="..." />
+                                    <!-- accueil Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- accueil Modal 2-->
+        <div class="accueil-modal modal fade" id="accueilModal2" tabindex="-1" aria-labelledby="accueilModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- accueil Modal - Title-->
+                                    <h2 class="accueil-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- accueil Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/accueil/cake.png" alt="..." />
+                                    <!-- accueil Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- accueil Modal 3-->
+        <div class="accueil-modal modal fade" id="accueilModal3" tabindex="-1" aria-labelledby="accueilModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- accueil Modal - Title-->
+                                    <h2 class="accueil-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- accueil Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/accueil/circus.png" alt="..." />
+                                    <!-- accueil Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- accueil Modal 4-->
+        <div class="accueil-modal modal fade" id="accueilModal4" tabindex="-1" aria-labelledby="accueilModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- accueil Modal - Title-->
+                                    <h2 class="accueil-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- accueil Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/accueil/game.png" alt="..." />
+                                    <!-- accueil Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- accueil Modal 5-->
+        <div class="accueil-modal modal fade" id="accueilModal5" tabindex="-1" aria-labelledby="accueilModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- accueil Modal - Title-->
+                                    <h2 class="accueil-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- accueil Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/accueil/safe.png" alt="..." />
+                                    <!-- accueil Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- accueil Modal 6-->
+        <div class="accueil-modal modal fade" id="accueilModal6" tabindex="-1" aria-labelledby="accueilModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- accueil Modal - Title-->
+                                    <h2 class="accueil-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- accueil Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/accueil/submarine.png" alt="..." />
+                                    <!-- accueil Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/static/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="/static/assets/img/icob.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi! How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button" id="submit-button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <script src="/static/js/app.js"></script>
+                <button><img src="./static/assets/img/chatbox-icon.svg" /></button>
+            </div>
+            </div>
+        </div>
+        <script>
+            $SCRIPT_ROOT = {{ request.script_root|tojson }};
+        </script>
+    </body>
+</html>

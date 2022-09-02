@@ -1,0 +1,185 @@
+{
+  "intents": [
+    {
+      "tag": "Stocks",
+      "patterns": [
+        "what is the stock price of ",
+        "stock price of ",
+        "price of the stock of :",
+        "stock value of",
+        "what is the stock value of ",
+        "price of ",
+        "how is stock price today",
+        "how is today",
+        "how is ",
+        "stock price"
+
+      ]},
+    {
+      "tag": "Informations",
+      "patterns": [
+        "what is a",
+        "what is an",
+        "what are ",
+        "what's a",
+        "what's an",
+        "give me the definition of",
+        "what's the meaning of ",
+        "search on web about ",
+        "search about",
+        "search on",
+        "what do you know about",
+        "do you know what means",
+        "do you know what is the meaning of",
+        "did you know what means",
+        "tell me about ",
+        "what is the definition of",
+        "what does means",
+        "the meaning of"
+        ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you",
+        "Hi there, how can I help"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye Come back again soon"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot"],
+      "responses": ["Happy to help", "Any time", "My pleasure"]
+    },
+    {
+      "tag": "news1",
+      "patterns": ["News", "what is the latest news", "Financial news", "What's news in finance today ?","what's news"
+      ,"What's new in finance ?","news for today","latest informations in finance"]
+  
+    },
+    {
+      "tag": "news2",
+      "patterns": ["what's more","give me more news","more news","show me more news"]
+  
+    },
+    {
+      "tag": "balance",
+      "patterns":[
+      "balance check balance",
+      "how much money",
+       "check how much",
+      "check how much money",
+      "how much",
+       "balance check",
+      "check my credit card balance",
+       "balance",
+       "check my savings account",
+       "what's the balance in my savings account",
+       "show available money on my checking account",
+       "how much money is available on my bank account",
+       "check how much money do i have",
+       "how much money do I have on the card",
+       "check my balance",
+       "can you show balance on the card",
+       "check money on my card",
+       "show balance",
+       "check my account",
+       "tell me how much money there is"],
+       "responses":[
+           "This is your latest balance:"]
+   },
+   {
+    "tag":"deposit",
+   "patterns":[
+    "earning check",
+    "deposits history",
+    "see my latest deposit",
+    "i want to see my deposits",
+    "check earnings",
+    "earnings",
+    "can you say how much money I got last month on my checking account",
+    "how much money did I earn in December",
+    "how much money did I earn on January 2",
+    "check my earnings on my card",
+    "check earnings are on my ",
+    "checking account",
+    "get info about my earnings on my card in December"
+    ],
+    "responses":[
+        "Here are your deposit transactions:"]
+    },
+    {
+      "tag":"account",
+      "patterns":[
+       "open account",
+       "what are the steps for opening account",
+       "account opening",
+       "open an account",
+       "i want to open an account",
+       "how do i open an account"
+       ],
+       "responses":[
+       "To open your account you should come to one of our banks in person Don't forget to bring your ID,\n In addition, you should provide proof of residence only if your residential address is different from the address on your identity document"]
+   },
+   {
+    
+    "tag":"Credit",
+    "patterns":[
+     "Can i get a loan?",
+     "How can i get a loan ?",
+     "im i able to get a loan ?",
+     "How can i get a loan ?",
+     " i need to get a loan",
+     "i need a loan",
+     "Loan",
+     "Credit"
+
+
+     ],
+     "responses":[
+"In order to benefit from a consumer or real estate loan, you must comply with the criteria for granting and eligibility for a loan, in particular a healthy financial situation and banking and employment seniority set by the bank."]
+  },
+  {
+    "tag":"Offre",
+    "patterns":[
+     "What are packs offered?",
+     "What services do you offer?",
+     "Services offered ?",
+     "what are your offers",
+     "What kind of offers you provide ?",
+     "What kind of services you provide ?"],
+     "responses":[
+   "1-Pack Young Campus reserved to 18-25 Years old. \n 2-Moroccan Living A board Pack.\n 3-Pack for moroccan individuals.\n For more details visit Offer section"]
+   },
+  {
+    "tag":"transfer",
+   "patterns":[
+    "when was my last transfer",
+    "date of my last deposit",
+    "check the last EFT",
+    "can you show the date of my last credit",
+    "when was the last credit",
+    "When was my last deposit"],
+    "responses":[
+  "Your last incoming transfer was on:"]
+  }
+  ]
+}
